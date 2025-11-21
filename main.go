@@ -28,5 +28,6 @@ func main() {
 	r := mux.NewRouter()
 	routes.RegisterBookStoreRoutes(r, db)
 	log.Fatal(http.ListenAndServe(":8080", r))
+	//connStr=postgresql://neondb_owner:npg_tSGrbOs6g2VX@ep-delicate-morning-a46fcge7-pooler.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
 
 }
